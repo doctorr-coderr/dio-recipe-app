@@ -33,7 +33,7 @@ class ApiService {
     );
   }
 
-  Future<void> deleteRcipe (int id) async {
+  Future<void> deleteRecipe (int id) async {
 
     await dio.delete('$baseUrl/$id');
   }
