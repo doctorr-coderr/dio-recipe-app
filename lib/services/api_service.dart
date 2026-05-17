@@ -21,6 +21,17 @@ class ApiService {
       );
   }
 
+  // UPDATE RECIPE
+  Future<void> updateRecipe(
+      int id,
+      Recipe recipe,
+      ) async {
+
+    await dio.put(
+      '$baseUrl/$id',
+      data: recipe.toJson(),
+    );
+  }
 
 
 }
