@@ -2,7 +2,7 @@ import '../models/recipe.dart';
 
 abstract class RecipeEvent {}
 
-class FetchRecipe extends RecipeEvent{}
+class FetchRecipes extends RecipeEvent{}
 
 class AddRecipe extends RecipeEvent{
   final Recipe recipe;

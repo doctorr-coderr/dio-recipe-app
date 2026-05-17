@@ -2,7 +2,6 @@ class Recipe {
  final int id;
  final String name;
  final String image;
- final String description;
  final String cuisine;
  final String difficulty;
 
@@ -10,7 +9,6 @@ class Recipe {
     required this.id,
     required this.name,
     required this.image,
-    required this.description,
     required this.cuisine,
     required this.difficulty,
   });
@@ -21,7 +19,6 @@ class Recipe {
       id: json['id'],
       name: json['name'],
       image: json['image'],
-      description: json['description'],
       cuisine: json['cuisine'],
       difficulty: json['difficulty'],
     );
@@ -31,7 +28,6 @@ class Recipe {
     return {
       'name': name,
       'image': image,
-      'description': description,
       'cuisine': cuisine,
       'difficulty': difficulty,
     };

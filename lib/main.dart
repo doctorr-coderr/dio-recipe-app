@@ -4,6 +4,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'bloc/recipe_bloc.dart';
 import 'services/api_service.dart';
 import 'screens/home_screen.dart';
+import '../bloc/recipe_event.dart';
 
 void main() {
 
