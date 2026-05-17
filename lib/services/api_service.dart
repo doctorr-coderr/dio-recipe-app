@@ -13,5 +13,14 @@ class ApiService {
     List recipesJson = response.data['recipes'];
     return recipesJson.map((json) => Recipe.fromJson(json)).toList();
   }
-  
+
+  //ADD RECIPE
+  Future<void> addRecipe(Recipe recipe) async{
+    await dio.post(
+      '$baseUrl/add', data: recipe.toJson()
+      );
+  }
+
+
+
 }
