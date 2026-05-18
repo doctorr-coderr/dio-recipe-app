@@ -38,5 +38,12 @@ class ApiService {
     await dio.delete('$baseUrl/$id');
   }
 
+  Future<void> patchRecipe (int id, Map<String, dynamic> data) async {
+
+    await dio.patch(
+      '$baseUrl/$id',
+      data: data,
+    );
+  }
 
 }
