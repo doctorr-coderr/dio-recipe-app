@@ -1,17 +1,54 @@
-# recipedio
+# RecipeSnap
 
-A new Flutter project.
+A minimalist Flutter recipe application built using **Flutter Bloc** and **Dio**.
 
-## Getting Started
+The app consumes data from the DummyJSON Recipes API and demonstrates full CRUD operations:
 
-This project is a starting point for a Flutter application.
+- GET
+- POST
+- PUT
+- PATCH
+- DELETE
 
-A few resources to get you started if this is your first Flutter project:
+---
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+## Preview
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<p align="center">
+  <img src="assets/images/preview.png" width="300"/>
+</p>
+
+---
+
+## Tech Stack
+
+- Flutter
+- Flutter Bloc
+- Dio
+- DummyJSON API
+
+---
+
+## Features
+
+- Fetch recipes
+- Get random recipe
+- Add recipe
+- Update recipe
+- Patch recipe difficulty
+- Delete recipe
+- Loading & error handling
+- Minimal UI
+
+---
+
+## API
+
+```text
+https://dummyjson.com/recipes
+```
+
+---
+
+## Author
+Samuel Abraham UGR/0041/16
