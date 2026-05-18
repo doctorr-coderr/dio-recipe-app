@@ -190,7 +190,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 });
                 
                 try {
-                  context.read<RecipeBloc>().add(PatchRecipe(recipe.id, updates));
+                  context.read<RecipeBloc>().add(PatchRecipe(recipe.id, index, updates));
                   
                   // Simulate delay for loading indicator
                   await Future.delayed(const Duration(milliseconds: 500));
