@@ -22,3 +22,11 @@ class DeleteRecipe extends RecipeEvent {
 
   DeleteRecipe(this.id);
 }
+
+class PatchRecipe extends RecipeEvent {
+  final int id;
+  final int index;
+  final Map<String, dynamic> data;
+
+  PatchRecipe(this.id, this.index, this.data);
+}
