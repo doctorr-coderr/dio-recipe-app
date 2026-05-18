@@ -160,7 +160,7 @@ class _HomeScreenState extends State<HomeScreen> {
           children: [
             const Text(
               "Update difficulty level:",
-              style: TextStyle(fontSize: 14, color: Colors.grey),
+              style: TextStyle(fontSize: 14, color: Colors.deepPurpleAccent),
             ),
             const SizedBox(height: 12),
             TextField(
@@ -257,7 +257,7 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
       appBar: AppBar(
         title: const Text("RecipeSnap"),
-        backgroundColor: Colors.grey,
+        backgroundColor: Colors.deepPurpleAccent,
         foregroundColor: Colors.white,
       ),
       body: Padding(
@@ -270,7 +270,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   child: ElevatedButton(
                     onPressed: getAllRecipes,
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.grey,
+                      backgroundColor: Colors.deepPurpleAccent,
                       shape: const RoundedRectangleBorder(
                         borderRadius: BorderRadius.zero,
                       ),
@@ -283,7 +283,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   child: ElevatedButton(
                     onPressed: getRandomRecipe,
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.grey,
+                      backgroundColor: Colors.deepPurpleAccent,
                       shape: const RoundedRectangleBorder(
                         borderRadius: BorderRadius.zero,
                       ),
@@ -296,7 +296,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   child: ElevatedButton(
                     onPressed: addRecipeDialog,
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.grey,
+                      backgroundColor: Colors.deepPurpleAccent,
                       shape: const RoundedRectangleBorder(
                         borderRadius: BorderRadius.zero,
                       ),
@@ -342,7 +342,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                     fit: BoxFit.cover,
                                     errorBuilder: (_, __, ___) => Container(
                                       height: 150,
-                                      color: Colors.grey.shade200,
+                                      color: Colors.deepPurpleAccent.shade200,
                                     ),
                                   ),
                                 ),
@@ -364,7 +364,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                           const SizedBox(width: 4),
                                           Text(
                                             "Cuisine: ${recipe.cuisine}",
-                                            style: const TextStyle(fontSize: 12, color: Colors.grey),
+                                            style: const TextStyle(fontSize: 12, color: Colors.deepPurpleAccent),
                                           ),
                                         ],
                                       ),
@@ -374,7 +374,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                           const SizedBox(width: 4),
                                           Text(
                                             "Difficulty: ${recipe.difficulty}",
-                                            style: const TextStyle(fontSize: 12, color: Colors.grey),
+                                            style: const TextStyle(fontSize: 12, color: Colors.deepPurpleAccent),
                                           ),
                                         ],
                                       ),
@@ -434,7 +434,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     
                     return const Text(
                       "Press GET ONE to view a recipe",
-                      style: TextStyle(color: Colors.grey),
+                      style: TextStyle(color: Colors.deepPurpleAccent),
                     );
                   },
                 ),
@@ -455,7 +455,7 @@ class _HomeScreenState extends State<HomeScreen> {
         Icon(
           isNumber ? Icons.check_circle : Icons.info_outline,
           size: 60,
-          color: Colors.grey,
+          color: Colors.deepPurpleAccent,
         ),
         const SizedBox(height: 20),
         Text(
@@ -464,7 +464,7 @@ class _HomeScreenState extends State<HomeScreen> {
           style: TextStyle(
             fontSize: isNumber ? 64 : 24,
             fontWeight: FontWeight.bold,
-            color: Colors.grey,
+            color: Colors.deepPurpleAccent,
           ),
         ),
         if (isNumber)
@@ -472,7 +472,7 @@ class _HomeScreenState extends State<HomeScreen> {
             padding: const EdgeInsets.only(top: 10),
             child: Text(
               int.parse(centerMessage!) == 1 ? "Item Loaded" : "Items Loaded",
-              style: const TextStyle(fontSize: 18, color: Colors.grey),
+              style: const TextStyle(fontSize: 18, color: Colors.deepPurpleAccent),
             ),
           ),
       ],
