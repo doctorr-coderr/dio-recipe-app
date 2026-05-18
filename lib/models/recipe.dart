@@ -17,10 +17,10 @@ class Recipe {
   factory Recipe.fromJson(Map<String, dynamic> json) {
     return Recipe(
       id: json['id'],
-      name: json['name'],
-      image: json['image'],
-      cuisine: json['cuisine'],
-      difficulty: json['difficulty'],
+      name: json['name'] ?? '',
+      image: json['image'] ?? '',
+      cuisine: json['cuisine'] ?? '',
+      difficulty: json['difficulty'] ?? '',
     );
   }
 
@@ -32,4 +32,19 @@ class Recipe {
       'difficulty': difficulty,
     };
   }
+
+ Recipe copyWith({
+   String? name,
+   String? image,
+   String? cuisine,
+   String? difficulty,
+ }) {
+   return Recipe(
+     id: id,
+     name: name ?? this.name,
+     image: image ?? this.image,
+     cuisine: cuisine ?? this.cuisine,
+     difficulty: difficulty ?? this.difficulty,
+   );
+ }
 }
