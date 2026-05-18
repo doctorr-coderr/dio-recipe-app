@@ -15,7 +15,7 @@ The app consumes data from the DummyJSON Recipes API and demonstrates full CRUD 
 ## Preview
 
 <p align="center">
-  <img src="assets/images/preview.png" width="300"/>
+  <img src="assets/images/image.png" width="300"/>
 </p>
 
 ---
