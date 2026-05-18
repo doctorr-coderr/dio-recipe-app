@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../models/recipe.dart';
@@ -107,6 +109,36 @@ class RecipeBloc
         emit(
           RecipeError(
             'Failed to delete recipe',
+          ),
+        );
+      }
+    });
+
+    on<PatchRecipe>((event, emit) async {
+
+      try {
+
+        await apiService.patchRecipe(
+          event.id,
+          event.data,
+        );
+
+       final oldRecipe = recipes[event.index];
+
+       final updateRecipe = Recipe(
+         id: oldRecipe.id,
+         
+         name: event.data['name'] ?? oldRecipe.name,
+         cuisine: event.data['cuisine'] ?? oldRecipe.cuisine,
+         image: event.data['imageUrl'] ?? oldRecipe.image,
+         difficulty: event.data['difficulty'] ?? oldRecipe.difficulty,
+       );
+
+      } catch (e) {
+
+        emit(
+          RecipeError(
+            'Failed to patch recipe',
           ),
         );
       }
